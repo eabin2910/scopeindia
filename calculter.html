@@ -1,0 +1,46 @@
+<script>
+    var p = prompt("Enter the operator (+, -, *, /)");
+    var a = prompt("Enter the first number");
+    var b = prompt("Enter the second number");
+
+    a = Number(a); 
+    b = Number(b);
+
+    function add(a, b) {
+        return a + b;
+    }
+
+    function subtract(a, b) {
+        return a - b;
+    }
+
+    function multiply(a, b) {
+        return a * b;
+    }
+
+    function division(a, b) {
+        return a / b;
+    }
+
+    switch (p) {
+        case "+":
+            document.write("Result: " + add(a, b));
+            break;
+        case "-":
+            document.write("Result: " + subtract(a, b));
+            break;
+        case "*":
+            document.write("Result: " + multiply(a, b));
+            break;
+        case "/":
+            if (b == 0) {
+                document.write("Error: Division by zero");
+            } else {
+                document.write("Result: " + division(a, b));
+            }
+            break;
+        default:
+            document.write("Error: Invalid operator");
+    }
+</script>
+

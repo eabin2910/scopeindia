@@ -1,0 +1,21 @@
+<script>
+    class Product {
+        constructor(name,price) {
+            this.name = name;
+            this.price = price;
+        }
+
+        display() {
+            document.write("Product Name is: " + this.name + "<br>");
+            document.write("Product Price is: ₹" + this.price);
+        }
+    }
+
+    let num1 = prompt("Enter the product name:");
+    let num2 = prompt("Enter the product price:");
+    num2 = Number(num2);
+
+
+    let obj = new Product(num1,num2);
+    obj.display();
+</script>

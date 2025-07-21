@@ -1,0 +1,30 @@
+<script>
+    class Course {
+        constructor(courseName, studentNames) {
+            this.courseName = courseName;
+            this.studentNames = studentNames;
+        }
+
+        printStudentCount() {
+            document.write("Course: " + this.courseName + "<br>");
+            document.write("Total students: " + this.studentNames.length + "<br>");
+        }
+    }
+
+    let courseName = prompt("Enter course name:");
+    let studentsInput = prompt("Enter student names");
+
+
+    let studentNames = studentsInput.split(",").map(name => name.trim());
+
+   
+    let obj = new Course(courseName, studentNames);
+
+    
+    obj.printStudentCount();
+</script>
+
+
+    
+    
+    

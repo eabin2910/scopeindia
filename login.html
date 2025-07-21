@@ -1,0 +1,33 @@
+<script>
+function login() {
+    
+    const users = [
+      { username: "john", password: "1234" },
+      { username: "alice", password: "pass" },
+      { username: "bob", password: "qwerty" }
+    ];
+  
+  
+     const inputUsername = prompt("Enter your username:");
+     const inputPassword = prompt("Enter your password:");
+  
+  
+
+for (let user of users) {
+  if (user.username == inputUsername && user.password === inputPassword) {
+     var loginSuccessful = true;
+    break;
+  }
+}
+
+if (loginSuccessful) {
+  document.write("Login successful");
+} else {
+    document.write("Login failed");
+}
+
+  }
+  
+  
+  login();
+  </script>

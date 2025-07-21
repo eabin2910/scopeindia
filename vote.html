@@ -1,0 +1,23 @@
+<script>
+    class Citizen {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        eligibletovote() {
+            if (this.age >= 18) {
+                document.write(this.name + " is eligible to vote.<br>");
+            } else {
+                document.write(this.name + " is not eligible to vote.<br>");
+            }
+        }
+    }
+
+    let x = prompt("Enter the name:");
+    let y = prompt("Enter the age:");
+    y = Number(y);
+
+    let obj = new Citizen(x, y);
+    obj.eligibletovote();
+</script>

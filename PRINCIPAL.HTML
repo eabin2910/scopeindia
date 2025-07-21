@@ -1,0 +1,18 @@
+<script>
+
+ principal = prompt("Enter the principal amount:");
+ timeInYear = prompt("Enter the time In Years:");
+ annualRate = prompt("Enter the annual interest rate (in %):");
+
+
+function calculateInterest(principal, timeInYears, annualRate) {
+     
+     interest = (principal * annualRate * timeInYears) / 100;
+    return interest;
+}
+
+ interest = calculateInterest(principal, timeInYear, annualRate);
+
+
+document.write(interest );
+</script>

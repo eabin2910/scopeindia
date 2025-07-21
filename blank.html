@@ -1,0 +1,31 @@
+
+<script>
+  class Handler {
+    constructor() {
+      this.a = [];
+    }
+
+    add() {
+      this.a[0] = 12;
+      this.a[1] = 23;
+      this.a[2] = 47;
+      this.a[0] = 34;  // Overwrites index 0
+      document.write("After add: " + this.a + "<br>");
+    }
+
+    update() {
+      this.a[0] = 34;  // Updates first element
+      document.write("After update: " + this.a + "<br>");
+    }
+
+    show() {
+      document.write("Current Array: " + this.a + "<br>");
+    }
+  }
+
+  const obj = new Handler();
+  obj.add();
+  obj.update();
+  obj.show();
+</script>
+

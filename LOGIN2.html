@@ -1,0 +1,33 @@
+<script>
+    class Member {
+        constructor() {
+            
+            this.members = [
+                { username: "john", password: "1234" },
+                { username: "alice", password: "pass" },
+                { username: "bob", password: "qwerty" }
+            ];
+        }
+    
+        login(username, password) {
+            for (let i = 0; i < this.members.length; i++) {
+                if (this.members[i].username === username && this.members[i].password === password) {
+                    return "Login successful";
+                }
+            }
+            return "Login failed";
+        }
+    }
+    
+    
+    const obj = new Member();
+    
+    
+    const username = prompt("Enter username:");
+    const password = prompt("Enter password:");
+  
+    constobj.login(username, password);
+    document.write(message);
+    </script>
+    
+     
